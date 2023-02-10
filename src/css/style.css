@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+  
+}
+
+nav li {
+    padding-left: 25px;
+    
+}
+
+nav a {
+    color: #595959;
+}
+
+nav a:hover {
+    text-decoration: underline #000000;
+}
+
+header  #usuario {
+   width: 40px;
+   border-radius: 50%;
+  
+  
+}
+
+header .menu #apps {
+    width: 30px;
+    cursor: pointer;
+}
+
+.usuario-menu {
+    margin-right: 30px;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+   margin-top: 10%;
+    align-items: center;
+
+}
+
+main #logo-centro {
+    background-image: url(../img/logo-centro.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 170px;
+}  
+main .responsivo {
+    display: none;
+}
+main #pesquisa {
+  margin-top: 15px;
+}
+
+#pesquisa input {
+   width: 550px;
+   height: 40px;
+   padding: 0px 45px 0px 45px;
+   border-radius: 30px;
+   border: none;
+   box-shadow: 1px 1px 10px #8f8f8f;
+    
+}
+
+.butao-personalizar {
+    display: flex;
+    justify-content: flex-end;
+   margin-top: 220px;
+   margin-right: 20px;
+}
+
+.butao-personalizar #edit{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.butao-personalizar button {
+    text-align: center;
+    padding: 10px 15px ;
+    border-radius: 30px;
+    border: none;
+    align-items: center;
+    display: flex;
+    color: #0f40f3;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px #878686;
+}
+
+@media (max-width:560px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 20px;
+        margin-left: 55px;
+
+    }
+
+    main .responsivo {
+        display: block;
+    }
+
+    main #logo-centro {
+        display: none;
+    }
+
+    #pesquisa input {
+        width: 250px;
+        height: 40px;
+        
+     }
+
+   
+
+     .butao-personalizar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 200px;
+       margin-left: 20px;
+    }
+    
+}
